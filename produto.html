@@ -1,0 +1,59 @@
+<head>
+    <meta charset="UTF-8">
+    <title>SF Sistema</title>
+    <script type="text/javascript" src="produto.js"></script>
+</head>
+<style>
+    *{margin: 0;padding: 0; box-sizing: border-box;}
+    body{
+        background-color:#5F7C8A;
+    }
+    .form{
+        background-color: white;
+        max-width: 850px;
+        width: 70%;
+        padding: 20px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        
+    }
+    .form button{
+        width: 50%;
+        height: 40px;
+        cursor: pointer;
+        background-color: #5F7C8A;
+        color: white;
+        border: 0;
+        border-radius: 40px;
+        
+    }
+    .form input[type="text"],
+    .form input[type="number"]{
+        width: 100%;
+        height: 45px;
+        border: 1px solid #ccc;
+        padding-left: 10px;
+        margin: 10px 0;
+        border-color: #5F7C8A;
+    }
+    .form button:hover{
+        background-color: #4A5F6A;
+    }
+</style>
+<body>
+    <div class="form">
+    <label>Descrição:</label>
+    <input type="text" id="Descrição">
+    <label>Quantidade:</label>
+    <input type="number" id="Quantidade">
+    <label>Preço de custo:</label>
+    <input type="number" id="preçocusto">
+    <label>Preço de venda:</label>
+    <input type="number" id="preçovenda">
+    <button onclick="cadastrar()">Cadastrar</button>
+    <div id="area">Resultado:</div>
+    <div id="Codigo">Código do produto:</div>
+    </div>
+</body>  
